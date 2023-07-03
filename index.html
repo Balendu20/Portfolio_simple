@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balendu Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background-color: rgb(0, 0, 32);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(39, 39, 147);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav li a:hover{
+            
+            color: rgb(181, 134, 192);
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            align-items: center;
+            
+        }
+        .LeftSection{           
+            font-size: 2rem;
+     
+        }
+
+        .RightSection{
+            width: 25%;
+           margin: 50px 0;
+            
+        }
+        .purple{
+            color: rgb(148, 69, 221);
+        }
+        #element{
+            color: rgb(148, 69, 221);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Balendu Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="LeftSection">Hi, My name is <span class="purple">Balendu</span>
+                
+                <div> and i am a passionate</div>
+                   
+                   <span id="element"></span></div>
+
+            <div class="RightSection"> 
+                <img src="imgsr.png" alt="dev_img">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Front-end developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
